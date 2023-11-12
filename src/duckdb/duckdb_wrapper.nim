@@ -7,17 +7,17 @@ when defined(buildDuckDb):
 
 else:
   when defined(Linux):
-    const duckdbUrl = "https://github.com/duckdb/duckdb/releases/download/v0.5.1/libduckdb-linux-amd64.zip"
+    const duckdbUrl = "https://github.com/duckdb/duckdb/releases/download/v0.9.1/libduckdb-linux-amd64.zip"
     const duckdbLib = "libduckdb.so"
   when defined(macosx):
-    const duckdbUrl = "https://github.com/duckdb/duckdb/releases/download/v0.5.1/libduckdb-osx-universal.zip"
+    const duckdbUrl = "https://github.com/duckdb/duckdb/releases/download/v0.9.1/libduckdb-osx-universal.zip"
     const duckdbLib = "libduckdb.dylib"
   when defined(Windows):
     const duckdbLib = "duckdb.dll"
     when defined(cpu64):
-      const duckdbUrl = "https://github.com/duckdb/duckdb/releases/download/v0.5.1/libduckdb-windows-amd64.zip"
+      const duckdbUrl = "https://github.com/duckdb/duckdb/releases/download/v0.9.1/libduckdb-windows-amd64.zip"
     when defined(cpu32):
-      const duckdbUrl = "https://github.com/duckdb/duckdb/releases/download/v0.5.1/libduckdb-windows-i386.zip"
+      const duckdbUrl = "https://github.com/duckdb/duckdb/releases/download/v0.9.1/libduckdb-windows-i386.zip"
 
 const baseDir = getProjectCacheDir("duckdb") & "/"
 
