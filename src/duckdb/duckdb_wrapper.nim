@@ -3,7 +3,7 @@ import nimterop/build
 import os
 
 when defined(buildDuckDb):
-  const duckdbUrl = "https://github.com/duckdb/duckdb/releases/download/v0.5.1/libduckdb-src.zip"
+  const duckdbUrl = "https://github.com/duckdb/duckdb/releases/download/v0.9.1/libduckdb-src.zip"
 
 else:
   when defined(Linux):
